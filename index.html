@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+  <head>
+    <title>Week 6: CSS Positioning (Demo 2)</title>
+    <!-- You might make a note to review this demo when you are making your own site in November -->
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: blue;
+        color: white;
+        width: 1200px;
+      }
+
+      #sidebar {
+        background-color: #EEE;
+        color: black;
+        width: 300px;
+        display: inline;
+        float: right;
+        clear: none;
+      }
+
+      #sidebar h5,
+      #sidebar p {
+        padding: 0 10px;
+        font-size: 24px;
+        margin-bottom: 0;
+      }
+
+      #main {
+        background-color: red;
+        display: inline;
+        float: left;
+        clear: none;
+        width: 875px;
+        /* 1200 - 300 (sidebar width) - 25 (sidebar margin-left) = 875px */
+      }
+
+      #main p {
+        font-size: 32px;
+        padding: 0 10px;
+      }
+    </style>
+
+  </head>
+  <!-- How to break up a page into containers -->
+  <body>
+    <div id="main">
+      <p>Vestibulum aliquet ligula eget iaculis accumsan. Sed viverra lacus nulla, nec finibus ipsum lacinia eget. Nam ut ornare nisl, lobortis suscipit quam. Vestibulum id augue tristique, auctor felis quis, efficitur velit. Donec nibh nulla, commodo nec cursus a, iaculis nec ipsum. Duis bibendum tellus ut sodales eleifend. Aliquam erat volutpat. Curabitur consequat ex a erat aliquet, non tincidunt ante euismod. Suspendisse dignissim scelerisque lorem. Vestibulum cursus arcu congue libero malesuada luctus. Etiam magna enim, volutpat in augue ut, ornare faucibus erat. Morbi non maximus lacus.</p>
+      <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+    </div>
+    <div id="sidebar">
+      <h5>This is a floating div.</h5>
+      <p>It could contain anything, like secondary content or mabye a UI.</p>
+      <ul>
+        <li><a href="/">Link 1</a></li>
+        <li><a href="/">Link 2</a></li>
+        <li><a href="/">Link 3</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
